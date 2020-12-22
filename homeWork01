@@ -1,0 +1,24 @@
+// Во person модулот креирајте функција која што треба да враќа основни податоци за person. Во main модулот, искористете ги фунциите кои ги нуди person.js модулот. Потоа, дефинирајте JSON object кој што ќе го именувате како person, додадете одредени податоци кои се соодветни за тој објект и обидете се да ги извршите сите фунции кои ги нуди person.js.
+//БОНУС: Во person.js модулот, креирајте повеќе фунции по ваш избор. Истите треба да имаат смисол дека се однесуваат за person
+function fullName(person){
+  const fName = `Info : ${person.lastName} ${person.firstName} ${person.age}`;
+  return  fName;
+}
+function location(person){
+  const loc = `Locaion : ${person.town} ${person.street}`;
+  return loc;
+}
+function schools(person){
+  const ski = `Skils : ${person.skils} ${person.academy}`;
+  return ski;
+}
+function future(person){
+  const futureJob = `Future job : ${person.job}`;
+  return futureJob;
+}
+module.exports = {
+  fullName,
+  location,
+  schools,
+  future
+};
