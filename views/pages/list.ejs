@@ -1,0 +1,21 @@
+<%- include('../template/head') -%>
+
+<body>
+  <div>
+    <%- include('../template/nav.ejs')-%>
+
+    <main>
+      <h1>List  </h1>
+      <p>Starting to study in 2020</p>
+      <ul>
+        <% list.forEach((item)=>{%>
+          <li><%=item%></li>
+        <%});%>
+      </ul>
+    </main>
+
+    <%- include('../template/footer.ejs')-%>
+  </div>
+
+</body>
+</html>

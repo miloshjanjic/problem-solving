@@ -1,0 +1,21 @@
+<%- include('../template/head') -%>
+
+<body>
+  <div>
+    <%- include('../template/nav.ejs')-%>
+
+    <main>
+      <h3>Links to pages :</h3>
+      <ul>
+        <% links.forEach((link)=>{%>
+          <a href="<%= link.url%>"><%=link.name%><br><br></a>
+        <%});%>
+      </ul>
+    </main>
+
+    <%- include('../template/footer.ejs')-%>
+
+  </div>
+
+</body>
+</html>
